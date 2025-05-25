@@ -2,252 +2,143 @@
 <html lang="pt-br">
 
 <head>
-  <!-- Metadados básicos -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academia 4.3.1">
-  <meta name="generator" content="Hugo 0.104.3" />
   <meta name="author" content="Lucas Dias Noronha">
-  <meta name="description" content="Graduando em Inteligência Artificial com foco em Machine Learning, Deep Learning, Natural Language Processing e Computer Vision">
-  
-  <!-- Favicon e tema -->
-  <meta name="theme-color" content="hsl(210, 100%, 80%)">
-  <link rel="icon" type="image/png" href="inteligencia-artificial.png">
-  <link rel="apple-touch-icon" type="image/png" href="inteligencia-artificial.png">
-  
-  <!-- Links de fontes e bibliotecas de ícones -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Roboto+Mono&display=swap">
-  <link rel="stylesheet" href="academia.min.00498a3e9fe61a86dbdca822e7463c55.css">
-
-  <!-- Links alternativos e RSS -->
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Lucas Dias Noronha">
-  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Lucas Dias Noronha">
-
-  <!-- Metadados para redes sociais -->
-  <meta property="og:site_name" content="Lucas Dias Noronha">
-  <meta property="og:url" content="">
-  <meta property="og:title" content="Lucas Dias Noronha">
-  <meta property="og:description" content="Graduando em Inteligência Artificial">
-  <meta property="og:locale" content="pt-br">
+  <meta name="description" content="Graduando em Inteligência Artificial com foco em Machine Learning, Deep Learning, NLP e Visão Computacional">
+  <meta name="theme-color" content="#a3d4f7">
 
   <title>Lucas Dias Noronha</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="inteligencia-artificial.png" type="image/png">
+  <link rel="apple-touch-icon" href="inteligencia-artificial.png" type="image/png">
+
+  <!-- Fontes e ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/github-dark.min.css" crossorigin="anonymous">
+
+  <!-- Estilo principal -->
+  <style>
+    body {
+      font-family: 'Fira Sans', sans-serif;
+      background-color: #0b0c10;
+      color: #cfd8dc;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #1f2833;
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #66fcf1;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 6rem 2rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2, h3 {
+      color: #66fcf1;
+    }
+
+    .btn-primary {
+      background-color: #45a29e;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .hero-img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(102, 252, 241, 0.2);
+    }
+
+    .network-icon a {
+      color: #66fcf1;
+      font-size: 1.5rem;
+      margin: 0 1rem;
+    }
+
+    ul.ul-edu {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul.ul-edu li {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1f2833;
+      color: #c5c6c7;
+    }
+  </style>
 </head>
 
-<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" class="dark">
-
-  
-
-  <!-- Barra de navegação -->
-  <nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
-    <div class="container">
-      <a class="navbar-brand" href="/">Apresentação</a>
-    </div>
+<body>
+  <!-- Navegação -->
+  <nav>
+    <a href="#hero">Início</a>
   </nav>
 
-  <!-- Seção de boas-vindas -->
-  <section id="hero" class="home-section wg-hero">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 order-md-1 text-center text-md-left align-self-center">
-          <div>
-            <h2 id="Apresentação"><strong>Bem-vindo!</strong></h2>
-            <p>Sou Lucas, um apaixonado por Inteligência Artificial, atualmente graduando na área com foco em Machine Learning, Deep Learning, Processamento de Linguagem Natural e Visão Computacional.</p>
-          </div>
-          <p class="mt-4">
-            <a href="/#contact" class="btn btn-primary btn-lg page-scroll">Contato</a>
-          </p>
-        </div>
-        <div class="col-10 mx-auto col-md-6 order-md-2 hero-media">
-          <img class="hero-img img-fluid" src="pexels-photo-8386440.webp" alt="Imagem de IA">
-        </div>
-      </div>
+  <!-- Hero -->
+  <section id="hero">
+    <h2><strong>Bem-vindo!</strong></h2>
+    <p>Sou Lucas, apaixonado por Inteligência Artificial. Atualmente graduando com foco em Machine Learning, Deep Learning, NLP e Visão Computacional.</p>
+    <a href="#about" class="btn-primary">Saiba mais</a>
+    <img class="hero-img" src="pexels-photo-8386440.webp" alt="Imagem de IA">
+  </section>
+
+  <!-- Sobre mim -->
+  <section id="about">
+    <h2>Sobre mim</h2>
+    <img class="hero-img" src="perfil.jpeg" alt="Avatar">
+    <p>Atualmente em formação nas áreas de dados e inteligência artificial por meio de três cursos complementares: Bacharelado em Ciência de Dados e IA (IESB), Tecnólogo em Análise de Dados (Claretiano), e Tecnólogo em IA (Cruzeiro do Sul). Possuo experiência prática com Python, SQL, estatística, machine learning, cloud computing e automação com IA.</p>
+
+    <h3>Educação</h3>
+    <ul class="ul-edu">
+      <li>
+        <strong>Bacharelado</strong>, Ciência de Dados e Inteligência Artificial — IESB
+      </li>
+      <li>
+        <strong>Tecnólogo</strong>, Análise de Dados — Claretiano
+      </li>
+      <li>
+        <strong>Tecnólogo</strong>, Inteligência Artificial — Cruzeiro do Sul Virtual
+      </li>
+    </ul>
+
+    <h3>Contato</h3>
+    <div class="network-icon">
+      <a href="mailto:lucasdiasnoronha1@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://x.com/dlucasnoronha" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com/LUCASDNORONHA" target="_blank"><i class="fab fa-github"></i></a>
     </div>
   </section>
 
-  <!-- Seção sobre mim -->
-  <section id="about" class="home-section wg-about">
-    <div class="container">
-      <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email person-address">
-        <div class="col-lg-5">
-          <div id="profile">
-            <img class="img-fluid" src="perfil.jpeg" itemprop="image" alt="Avatar">
-          </div>
-          <ul class="network-icon bg-white mx-2 py-2 text-center" aria-hidden="true">
-            <li class="mx-3">
-              <a itemprop="sameAs" href="mailto:lucasdiasnoronha1@gmail.com">
-                <i class="fas fa-envelope"></i>
-              </a>
-            </li>
-            <li class="mx-3">
-              <a itemprop="sameAs" href="https://x.com/dlucasnoronha" target="_blank" rel="noopener">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="mx-3">
-              <a itemprop="sameAs" href="https://github.com/LUCASDNORONHA/" target="_blank" rel="noopener">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-7" itemprop="description">
-          <div class="portrait-title">
-            <h2 itemprop="name">Lucas Dias Noronha</h2>
-            <h3 class="d-inline-block" itemprop="jobTitle">Graduando em Inteligência Artificial,</h3>
-            <h3 class="d-inline-block" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
-              <a href="https://www.cruzeirodosulvirtual.com.br/graduacao/inteligencia-artificial/" target="_blank" itemprop="url" rel="noopener">
-                <span itemprop="name">Universidade Cruzeiro do Sul</span>
-              </a>
-            </h3>
-          </div>
-          <p>Atualmente em formação nas áreas de dados e inteligência artificial por meio de três cursos complementares: Bacharelado em Ciência de Dados e Inteligência Artificial (IESB), Tecnólogo em Análise de Dados (Claretiano) e Tecnólogo em Inteligência Artificial (Cruzeiro do Sul Virtual). Desenvolvendo competências práticas e teóricas em programação (Python, SQL), fundamentos de estatística, análise e visualização de dados, machine learning, deep learning, computação em nuvem e automação com IA. Participação ativa em projetos integradores e atividades aplicadas, com foco em consolidar uma base sólida para atuação futura no setor de tecnologia e ciência de dados.</p>
-          <div class="row">
-            <div class="col-md-7">
-              <h3>Educação</h3>
-              <ul class="ul-edu fa-ul">
-                <li>
-                  <i class="fa-li fas fa-graduation-cap"></i>
-                  <div class="description">
-                    <p class="course">Bacharelado, Ciência de Dados e Inteligência Artificial</p>
-                    <p class="institution">Instituto de Educação Superior de Brasília - IESB</p>
-                    <p class="period">2025 - 2028</p>
-                    <p class="details">Formação voltada para o desenvolvimento de soluções inteligentes com foco em Machine Learning, Deep Learning, Processamento de Linguagem Natural (PLN) e Visão Computacional. O curso integra fundamentos matemáticos, estatísticos e computacionais para capacitar profissionais no uso de algoritmos e ferramentas modernas de IA em ambientes reais de negócio e pesquisa. Ênfase na aplicação prática com uso de linguagens como Python e plataformas como TensorFlow, Keras e outras. 2025 – 2026 Análise de Dados, Claretiano - Rede de Educação, EaD, T</p>
-                  </div>
-                  </li>
-                  <li>
-                  <i class="fa-li fas fa-graduation-cap"></i>
-                  <div class="description">
-                    <p class="course">Tecnólogo, Análise de Dados</p>
-                    <p class="institution">Claretiano - Rede de Educação</p>
-                    <p class="period">2025 - 2026</p>
-                    <p class="details">
-                      Formação focada em coleta, limpeza, análise e visualização de dados, com ênfase em estatística aplicada,
-                      programação em Python, SQL, técnicas de machine learning, big data e business intelligence. Desenvolvimento de
-                      habilidades para apoiar a tomada de decisão baseada em dados, com aplicação prática em projetos integradores.</p>
-                  </div>
-                  </li>
-                  <li>
-                  <i class="fa-li fas fa-graduation-cap"></i>
-                  <div class="description">
-                    <p class="course">Tecnólogo, Inteligência Artificial</p>
-                    <p class="institution">Universidade Cruzeiro do Sul - UNICSUL</p>
-                    <p class="period">2023 - 2025</p>
-                    <p class="details">
-                      Formação focada em fundamentos matemáticos, estatísticos e computacionais aplicados à Inteligência Artificial,
-                      com projetos voltados para Machine Learning, Deep Learning e Ciência de Dados.</p>
-                  </div>
-                  </li>
-
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-5">
-              <h3>Interesse</h3>
-              <ul class="ul-interests">
-                <li>Machine Learning</li>
-                <li>Deep Learning</li>
-                <li>Processamento de Linguagem Natural</li>
-                <li>Visão Computacional</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Seção de projetos -->
-  <section id="experience" class="home-section wg-experience">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-4 section-heading">
-          <h1>Projetos</h1>
-          <p>Um breve resumo das minhas experiências acadêmicas</p>
-        </div>
-        <div class="col-12 col-lg-8">
-          <!-- Projetos -->
-          <div class="row experience">
-            <div class="col-auto text-center flex-column d-none d-sm-flex">
-              <div class="row h-50">
-                <div class="col">&nbsp;</div>
-                <div class="col">&nbsp;</div>
-              </div>
-              <div class="m-2">
-                <span class="badge badge-pill border exp-fill">&nbsp;</span>
-              </div>
-              <div class="row h-50">
-                <div class="col border-right">&nbsp;</div>
-                <div class="col">&nbsp;</div>
-              </div>
-            </div>
-            <div class="col py-2">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title exp-title text-muted mt-0 mb-1">Desenvolvimento de Algoritmos de Machine Learning</h4>
-                  <div class="text-muted exp-meta">2023 - Presente <span class="middot-divider"></span> Estudos Acadêmico</div>
-                  <div class="card-text">
-                    <p>Trabalhando em algoritmos de Machine Learning para classificação e regressão, aplicados a diversos projetos acadêmicos e pessoais.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Adicione mais projetos conforme necessário -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Seção de contato -->
-  <section id="contact" class="home-section wg-contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-4 section-heading">
-          <h1>Contato</h1>
-          <p>Entre em contato comigo através do formulário abaixo:</p>
-        </div>
-        <div class="col-12 col-lg-8">
-          <form action="https://formspree.io/YOUREMAIL" method="POST">
-            <div class="form-group">
-              <label for="name">Nome:</label>
-              <input type="text" class="form-control" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label for="message">Mensagem:</label>
-              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Rodapé -->
-  <footer id="footer" class="text-center py-4">
-    <div class="container">
-      <p>&copy; 2024 Lucas Dias Noronha.</p>
-    </div>
+  <footer>
+    &copy; 2025 Lucas Dias Noronha. Todos os direitos reservados.
   </footer>
-
-  <!-- Scripts necessários -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-tsQFQPByfXdo1AXSiTgHI64t+YVDbDj8VJpuIOtJ2dA=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBkFnm7MkX7+S5upfn/vGkOYKtE2hxADjwyWBTJ3" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-vcdohMs7P9EjK4yy8HqHo2vUBuO4TVsvnj+KB4cvcoM=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
-  <script src="academia.min.00498a3e9fe61a86dbdca822e7463c55.js"></script>
-
 </body>
 
 </html>
