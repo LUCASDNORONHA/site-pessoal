@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -26,17 +27,14 @@
       box-sizing: border-box;
     }
 
-    /* -- DARK MODE AUTOMÁTICO -- */
-    /* Corpo claro padrão */
     body {
       margin: 0;
       font-family: 'Fira Sans', sans-serif;
-      background: #f0f3f5;
-      color: #222222;
+      background: #0d1117;
+      color: #cbd5e1;
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      transition: background-color 0.4s ease, color 0.4s ease;
     }
 
     /* Container geral */
@@ -48,7 +46,7 @@
 
     /* Navegação fixa */
     nav {
-      background: #ffffff;
+      background: #161b22;
       position: fixed;
       width: 100%;
       top: 0;
@@ -60,27 +58,18 @@
       align-items: center;
       z-index: 999;
       border-bottom: 2px solid #0f4c81;
-      transition: background-color 0.4s ease;
     }
 
     nav a {
-      color: #0f4c81;
+      color: #58a6ff;
       font-weight: 700;
       text-decoration: none;
       font-size: 1.1rem;
       transition: color 0.3s ease;
-      /* -- ANIMAÇÃO SLICK BOTÕES -- */
-      padding: 0.3rem 0.6rem;
-      border-radius: 8px;
-      box-shadow: 0 0 0 transparent;
-      will-change: transform, box-shadow;
     }
 
     nav a:hover {
-      color: #2978b5;
-      box-shadow: 0 0 8px #2978b5aa;
-      transform: scale(1.05);
-      transition: transform 0.25s ease, box-shadow 0.25s ease, color 0.3s ease;
+      color: #a0cfff;
     }
 
     /* Hero Section */
@@ -91,38 +80,34 @@
 
     #hero h1 {
       font-size: 2.8rem;
-      color: #0f4c81;
+      color: #58a6ff;
       margin-bottom: 0.5rem;
-      transition: color 0.4s ease;
     }
 
     #hero p {
       font-size: 1.25rem;
-      color: #555555;
+      color: #8f9bb3;
       max-width: 600px;
       margin: 0 auto 1.5rem;
-      transition: color 0.4s ease;
     }
 
     #hero .btn-primary {
       background: #0f4c81;
-      color: #f0f3f5;
+      color: #cbd5e1;
       padding: 0.75rem 2rem;
       font-weight: 700;
       border: none;
       border-radius: 12px;
       cursor: pointer;
       box-shadow: 0 0 10px #0f4c81aa;
-      transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
       text-decoration: none;
       display: inline-block;
-      will-change: background, box-shadow, transform;
     }
 
     #hero .btn-primary:hover {
       background: #2978b5;
       box-shadow: 0 0 20px #2978b5cc;
-      transform: scale(1.05);
     }
 
     #hero img {
@@ -140,26 +125,22 @@
 
     /* Sobre mim */
     #about {
-      background: #ffffff;
+      background: #161b22;
       padding: 2rem;
       border-radius: 20px;
-      box-shadow: 0 4px 15px rgba(21, 126, 251, 0.15);
+      box-shadow: 0 4px 15px rgba(21, 126, 251, 0.35);
       margin-bottom: 3rem;
-      transition: background-color 0.4s ease, box-shadow 0.4s ease;
     }
 
-    #about h2,
-    #about h3 {
-      color: #0f4c81;
+    #about h2, #about h3 {
+      color: #58a6ff;
       margin-bottom: 1rem;
-      transition: color 0.4s ease;
     }
 
     #about p {
-      color: #444444;
+      color: #a0aec0;
       margin-bottom: 1.5rem;
       font-size: 1.1rem;
-      transition: color 0.4s ease;
     }
 
     #about img {
@@ -168,7 +149,7 @@
       width: 100%;
       margin-left: 1.5rem;
       border-radius: 50%;
-      box-shadow: 0 10px 25px rgba(21, 126, 251, 0.3);
+      box-shadow: 0 10px 25px rgba(21, 126, 251, 0.5);
       transition: box-shadow 0.3s ease;
     }
 
@@ -183,19 +164,19 @@
     }
 
     ul.ul-edu li {
-      background: #f0f3f5;
+      background: #0d1117;
       margin-bottom: 1rem;
       padding: 0.75rem 1rem;
       border-left: 6px solid #0f4c81;
       border-radius: 8px;
-      color: #222222;
+      color: #cbd5e1;
       font-weight: 600;
-      box-shadow: 0 3px 10px rgba(21, 126, 251, 0.1);
+      box-shadow: 0 3px 10px rgba(21, 126, 251, 0.2);
       transition: border-color 0.3s ease;
     }
 
     ul.ul-edu li:hover {
-      border-left-color: #2978b5;
+      border-left-color: #58a6ff;
     }
 
     /* Redes sociais */
@@ -207,15 +188,13 @@
     }
 
     .network-icon a {
-      color: #0f4c81;
+      color: #58a6ff;
       font-size: 1.8rem;
-      transition: color 0.3s ease, transform 0.25s ease;
-      will-change: color, transform;
+      transition: color 0.3s ease;
     }
 
     .network-icon a:hover {
-      color: #2978b5;
-      transform: scale(1.15);
+      color: #a0cfff;
     }
 
     /* Footer */
@@ -223,11 +202,10 @@
       text-align: center;
       padding: 1.5rem 1rem;
       font-size: 0.9rem;
-      background: #ffffff;
+      background: #161b22;
       color: #6c7a89;
       border-top: 1px solid #0f4c81;
       user-select: none;
-      transition: background-color 0.4s ease, color 0.4s ease;
     }
 
     /* Responsividade */
@@ -238,122 +216,52 @@
         margin: 1rem auto 2rem;
       }
     }
-
-    /* -- DARK MODE com prefers-color-scheme: dark -- */
-    @media (prefers-color-scheme: dark) {
-      body {
-        background: #0d1117;
-        color: #cbd5e1;
-      }
-
-      nav {
-        background: #161b22;
-        border-bottom-color: #0f4c81;
-      }
-
-      nav a {
-        color: #58a6ff;
-      }
-
-      nav a:hover {
-        color: #a0cfff;
-        box-shadow: 0 0 8px #58a6ffaa;
-        transform: scale(1.05);
-      }
-
-      #hero h1,
-      #hero p,
-      #about h2,
-      #about h3 {
-        color: #58a6ff;
-      }
-
-      #hero .btn-primary {
-        background: #238636;
-        box-shadow: 0 0 10px #238636aa;
-      }
-
-      #hero .btn-primary:hover {
-        background: #2ea043;
-        box-shadow: 0 0 20px #2ea043cc;
-      }
-
-      #about {
-        background: #161b22;
-        box-shadow: 0 4px 15px #23863633;
-      }
-
-      ul.ul-edu li {
-        background: #0d1117;
-        border-left-color: #238636;
-        color: #cbd5e1;
-      }
-
-      ul.ul-edu li:hover {
-        border-left-color: #2ea043;
-      }
-
-      .network-icon a {
-        color: #58a6ff;
-      }
-
-      .network-icon a:hover {
-        color: #a0cfff;
-      }
-
-      footer {
-        background: #161b22;
-        color: #8b949e;
-        border-top-color: #238636;
-      }
-    }
-
-    /* -- SMOOTH SCROLL -- */
-    html {
-      scroll-behavior: smooth;
-    }
   </style>
 </head>
 
 <body>
   <nav>
-    <a href="#hero">Inicio</a>
-    <a href="#about">Sobre mim</a>
+    <a href="#hero">Início</a>
+    <a href="#about">Sobre</a>
   </nav>
 
   <main>
-    <section id="hero">
+    <section id="hero" aria-label="Introdução">
       <h1>Lucas Dias Noronha</h1>
-      <p>Graduando em Inteligência Artificial com foco em Machine Learning, Deep Learning, NLP e Visão Computacional</p>
-      <a class="btn-primary" href="https://www.linkedin.com/in/lucas-dias-noronha-982b6b1b3/"
-        target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <img src="inteligencia-artificial.png" alt="Lucas Dias Noronha" />
+      <p>Graduando em Inteligência Artificial com foco em Machine Learning, Deep Learning, NLP e Visão Computacional.</p>
+      <a href="#about" class="btn-primary" role="button" aria-label="Saiba mais sobre Lucas">Saiba mais</a>
+      <img src="pexels-photo-8386440.webp" alt="Imagem representando Inteligência Artificial" />
     </section>
 
-    <section id="about">
+    <section id="about" aria-label="Sobre Lucas">
       <h2>Sobre mim</h2>
-      <p>Lucas Dias Noronha, 27 anos, do Distrito Federal, apaixonado por IA, Ciência de Dados e lore de The Elder Scrolls.</p>
-      <p>Estudo duas graduações tecnológicas EaD e uma presencial em Ciência de Dados e IA. Trabalho de dia e estudo à noite.</p>
-      <img src="perfil.jpg" alt="Foto de Lucas" />
-      <h3>Formação</h3>
+      <img src="perfil.jpeg" alt="Foto de perfil de Lucas Dias Noronha" />
+      <p>
+        Estou em formação nas áreas de dados e inteligência artificial por meio de três cursos complementares: Bacharelado em Ciência de Dados e IA (IESB),
+        Tecnólogo em Análise de Dados (Claretiano) e Tecnólogo em IA (Cruzeiro do Sul Virtual).
+      </p>
+      <p>
+        Tenho experiência prática com Python, SQL, estatística, machine learning, cloud computing e automação com IA.
+      </p>
+
+      <h3>Educação</h3>
       <ul class="ul-edu">
-        <li>Técnico em Informática, 2014, CEFET-MG</li>
-        <li>Graduando em Ciência de Dados e IA, 2023–2026, IESB</li>
-        <li>Graduando em Análise de Dados, 2022–2025, Universidade Estácio de Sá</li>
-        <li>Graduando em Inteligência Artificial, 2022–2025, Uninter</li>
+        <li><strong>Bacharelado</strong>, Ciência de Dados e Inteligência Artificial — IESB</li>
+        <li><strong>Tecnólogo</strong>, Análise de Dados — Claretiano</li>
+        <li><strong>Tecnólogo</strong>, Inteligência Artificial — Cruzeiro do Sul Virtual</li>
       </ul>
 
+      <h3>Contato</h3>
       <div class="network-icon">
-        <a href="https://github.com/lucasnoronha" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
-            class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/lucas-dias-noronha-982b6b1b3/" target="_blank" rel="noopener noreferrer"
-          aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:lucasdiasnoronha1@gmail.com" aria-label="Enviar email para Lucas"><i class="fas fa-envelope"></i></a>
+        <a href="https://x.com/dlucasnoronha" target="_blank" rel="noopener" aria-label="Twitter de Lucas"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/LUCASDNORONHA" target="_blank" rel="noopener" aria-label="GitHub de Lucas"><i class="fab fa-github"></i></a>
       </div>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 Lucas Dias Noronha - Todos os direitos reservados.
+    &copy; 2025 Lucas Dias Noronha. Todos os direitos reservados.
   </footer>
 </body>
 
