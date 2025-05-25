@@ -1,267 +1,274 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="author" content="Lucas Dias Noronha" />
-  <meta name="description" content="Graduando em Inteligência Artificial com foco em Machine Learning, Deep Learning, NLP e Visão Computacional" />
-  <meta name="theme-color" content="#1b2838" />
+  <title>Lucas Barbosa - Ciência de Dados & IA</title>
 
-  <title>Lucas Dias Noronha</title>
-
-  <!-- Favicon -->
-  <link rel="icon" href="inteligencia-artificial.png" type="image/png" />
-  <link rel="apple-touch-icon" href="inteligencia-artificial.png" />
-
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
-
-  <!-- Styles -->
   <style>
-    /* Reset básico */
+    /* ======== RESET BÁSICO ======== */
     * {
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
     }
 
     body {
-      margin: 0;
-      font-family: 'Fira Sans', sans-serif;
-      background: #0d1117;
-      color: #cbd5e1;
+      font-family: 'Arial', sans-serif;
+      background: #121212;
+      color: #f0f0f0;
       line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+      scroll-behavior: smooth; /* Fallback se JS não rodar */
     }
 
-    /* Container geral */
-    main {
-      max-width: 960px;
-      margin: 6rem auto 3rem;
-      padding: 0 1rem;
-    }
-
-    /* Navegação fixa */
+    /* ======== NAV ======== */
     nav {
-      background: #161b22;
       position: fixed;
-      width: 100%;
       top: 0;
-      left: 0;
-      padding: 1rem 2rem;
-      box-shadow: 0 2px 6px rgba(0, 255, 255, 0.15);
+      width: 100%;
+      background: #0f4c81;
+      border-bottom: 2px solid #164d8b;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 999;
-      border-bottom: 2px solid #0f4c81;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      z-index: 100;
     }
 
     nav a {
-      color: #58a6ff;
-      font-weight: 700;
+      color: #c3d9f2;
       text-decoration: none;
+      font-weight: 600;
       font-size: 1.1rem;
       transition: color 0.3s ease;
     }
 
     nav a:hover {
-      color: #a0cfff;
+      color: #7fb2ff;
     }
 
-    /* Hero Section */
+    /* ======== HERO ======== */
     #hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      margin-bottom: 4rem;
+      padding: 0 2rem;
+      background: #121212;
     }
 
     #hero h1 {
-      font-size: 2.8rem;
+      font-size: 3rem;
+      margin-bottom: 1rem;
       color: #58a6ff;
-      margin-bottom: 0.5rem;
+      text-shadow: 0 0 10px #58a6ff99;
     }
 
     #hero p {
-      font-size: 1.25rem;
-      color: #8f9bb3;
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
       max-width: 600px;
-      margin: 0 auto 1.5rem;
+      color: #d0d0d0;
     }
 
     #hero .btn-primary {
+      padding: 0.8rem 2rem;
       background: #0f4c81;
-      color: #cbd5e1;
-      padding: 0.75rem 2rem;
-      font-weight: 700;
       border: none;
-      border-radius: 12px;
+      border-radius: 5px;
+      color: #f0f0f0;
+      font-weight: 700;
+      font-size: 1.1rem;
       cursor: pointer;
-      box-shadow: 0 0 10px #0f4c81aa;
+      box-shadow: 0 4px 15px rgba(21, 126, 251, 0.3);
       transition: background 0.3s ease, box-shadow 0.3s ease;
-      text-decoration: none;
-      display: inline-block;
     }
 
+    /* Efeito pulse no hover */
     #hero .btn-primary:hover {
       background: #2978b5;
       box-shadow: 0 0 20px #2978b5cc;
+      animation: pulse 1.5s infinite;
     }
 
-    #hero img {
-      margin-top: 2rem;
-      max-width: 100%;
-      height: auto;
-      border-radius: 20px;
-      box-shadow: 0 10px 20px rgba(21, 126, 251, 0.4);
-      transition: transform 0.3s ease;
+    @keyframes pulse {
+      0%, 100% {
+        box-shadow: 0 0 20px #2978b5cc;
+        transform: scale(1);
+      }
+      50% {
+        box-shadow: 0 0 30px #58a6ffcc;
+        transform: scale(1.05);
+      }
     }
 
-    #hero img:hover {
-      transform: scale(1.05);
-    }
-
-    /* Sobre mim */
+    /* ======== ABOUT ======== */
     #about {
-      background: #161b22;
-      padding: 2rem;
-      border-radius: 20px;
-      box-shadow: 0 4px 15px rgba(21, 126, 251, 0.35);
-      margin-bottom: 3rem;
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: 0 auto 4rem auto;
+      background: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(21, 126, 251, 0.5);
     }
 
-    #about h2, #about h3 {
+    #about h2 {
       color: #58a6ff;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
     }
 
     #about p {
-      color: #a0aec0;
-      margin-bottom: 1.5rem;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      color: #ccc;
+      line-height: 1.7;
+      text-align: justify;
     }
 
-    #about img {
-      float: right;
-      max-width: 180px;
-      width: 100%;
-      margin-left: 1.5rem;
-      border-radius: 50%;
-      box-shadow: 0 10px 25px rgba(21, 126, 251, 0.5);
-      transition: box-shadow 0.3s ease;
-    }
-
-    #about img:hover {
-      box-shadow: 0 15px 35px #2978b5cc;
-    }
-
-    /* Lista Educação */
+    /* ======== EDUCAÇÃO ======== */
     ul.ul-edu {
       list-style: none;
-      padding-left: 0;
+      margin-top: 2rem;
     }
 
     ul.ul-edu li {
-      background: #0d1117;
+      background: #2978b5;
       margin-bottom: 1rem;
-      padding: 0.75rem 1rem;
-      border-left: 6px solid #0f4c81;
-      border-radius: 8px;
-      color: #cbd5e1;
+      padding: 1rem 1.5rem;
+      border-left: 6px solid #58a6ff;
+      color: #e6e6e6;
       font-weight: 600;
-      box-shadow: 0 3px 10px rgba(21, 126, 251, 0.2);
-      transition: border-color 0.3s ease;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+      cursor: default;
     }
 
     ul.ul-edu li:hover {
-      border-left-color: #58a6ff;
+      background: #58a6ff;
+      color: #121212;
     }
 
-    /* Redes sociais */
-    .network-icon {
-      margin-top: 2rem;
-      display: flex;
-      gap: 1.8rem;
-      justify-content: flex-start;
-    }
-
-    .network-icon a {
-      color: #58a6ff;
-      font-size: 1.8rem;
-      transition: color 0.3s ease;
-    }
-
-    .network-icon a:hover {
-      color: #a0cfff;
-    }
-
-    /* Footer */
+    /* ======== FOOTER ======== */
     footer {
       text-align: center;
-      padding: 1.5rem 1rem;
+      padding: 1.5rem 2rem;
+      background: #0f4c81;
+      color: #dcdcdc;
+      border-top: 2px solid #164d8b;
       font-size: 0.9rem;
-      background: #161b22;
-      color: #6c7a89;
-      border-top: 1px solid #0f4c81;
-      user-select: none;
     }
 
-    /* Responsividade */
-    @media (max-width: 768px) {
-      #about img {
-        float: none;
-        display: block;
-        margin: 1rem auto 2rem;
+    /* ======== DARK MODE AUTOMÁTICO PARA SISTEMAS CLAROS ======== */
+    @media (prefers-color-scheme: light) {
+      body {
+        background: #f9f9f9;
+        color: #222222;
+      }
+
+      nav {
+        background: #eaeaea;
+        border-bottom-color: #0f4c81;
+      }
+
+      nav a {
+        color: #0f4c81;
+      }
+
+      nav a:hover {
+        color: #2978b5;
+      }
+
+      #about {
+        background: #ffffff;
+        box-shadow: 0 4px 15px rgba(21, 126, 251, 0.2);
+      }
+
+      ul.ul-edu li {
+        background: #f0f0f0;
+        border-left-color: #2978b5;
+        color: #222;
+      }
+
+      ul.ul-edu li:hover {
+        background: #2978b5;
+        color: #fff;
+      }
+
+      footer {
+        background: #eaeaea;
+        color: #555555;
+        border-top-color: #0f4c81;
+      }
+
+      #hero h1 {
+        color: #0f4c81;
+        text-shadow: none;
+      }
+
+      #hero p {
+        color: #333;
+      }
+
+      #hero .btn-primary {
+        background: #0f4c81;
+        color: #fff;
+        box-shadow: 0 4px 15px rgba(15, 76, 129, 0.3);
+      }
+
+      #hero .btn-primary:hover {
+        background: #2978b5;
+        box-shadow: 0 0 20px #2978b5cc;
       }
     }
   </style>
 </head>
-
 <body>
   <nav>
     <a href="#hero">Início</a>
     <a href="#about">Sobre</a>
+    <a href="#education">Educação</a>
   </nav>
 
-  <main>
-    <section id="hero" aria-label="Introdução">
-      <h1>Lucas Dias Noronha</h1>
-      <p>Graduando em Inteligência Artificial com foco em Machine Learning, Deep Learning, NLP e Visão Computacional.</p>
-      <a href="#about" class="btn-primary" role="button" aria-label="Saiba mais sobre Lucas">Saiba mais</a>
-      <img src="pexels-photo-8386440.webp" alt="Imagem representando Inteligência Artificial" />
-    </section>
+  <section id="hero">
+    <h1>Lucas Barbosa</h1>
+    <p>Graduando em Ciência de Dados e Inteligência Artificial. Apaixonado por IA, lore de Elder Scrolls e música boa.</p>
+    <button class="btn-primary" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Saiba mais</button>
+  </section>
 
-    <section id="about" aria-label="Sobre Lucas">
-      <h2>Sobre mim</h2>
-      <img src="perfil.jpeg" alt="Foto de perfil de Lucas Dias Noronha" />
-      <p>
-        Estou em formação nas áreas de dados e inteligência artificial por meio de três cursos complementares: Bacharelado em Ciência de Dados e IA (IESB),
-        Tecnólogo em Análise de Dados (Claretiano) e Tecnólogo em IA (Cruzeiro do Sul Virtual).
-      </p>
-      <p>
-        Tenho experiência prática com Python, SQL, estatística, machine learning, cloud computing e automação com IA.
-      </p>
+  <section id="about">
+    <h2>Sobre Mim</h2>
+    <p>
+      Olá! Eu sou Lucas, estudante dedicado em Ciência de Dados e IA, sempre buscando aprender e inovar. Amo a lore rica dos jogos Elder Scrolls, especialmente Skyrim e Morrowind. Quando não estou estudando ou trabalhando, curto um som de Circa Survive e exploro sons do mundo como música indígena e russa. 
+    </p>
 
-      <h3>Educação</h3>
+    <section id="education">
+      <h2>Educação</h2>
       <ul class="ul-edu">
-        <li><strong>Bacharelado</strong>, Ciência de Dados e Inteligência Artificial — IESB</li>
-        <li><strong>Tecnólogo</strong>, Análise de Dados — Claretiano</li>
-        <li><strong>Tecnólogo</strong>, Inteligência Artificial — Cruzeiro do Sul Virtual</li>
+        <li>Graduação Tecnológica em Inteligência Artificial (EaD)</li>
+        <li>Graduação Tecnológica em Análise de Dados (EaD)</li>
+        <li>Bacharelado em Ciência de Dados e IA (Presencial)</li>
       </ul>
-
-      <h3>Contato</h3>
-      <div class="network-icon">
-        <a href="mailto:lucasdiasnoronha1@gmail.com" aria-label="Enviar email para Lucas"><i class="fas fa-envelope"></i></a>
-        <a href="https://x.com/dlucasnoronha" target="_blank" rel="noopener" aria-label="Twitter de Lucas"><i class="fab fa-twitter"></i></a>
-        <a href="https://github.com/LUCASDNORONHA" target="_blank" rel="noopener" aria-label="GitHub de Lucas"><i class="fab fa-github"></i></a>
-      </div>
     </section>
-  </main>
+  </section>
 
   <footer>
-    &copy; 2025 Lucas Dias Noronha. Todos os direitos reservados.
+    &copy; 2025 Lucas Barbosa - Todos os direitos reservados.
   </footer>
-</body>
 
+  <!-- Smooth scroll para os links da nav -->
+  <script>
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
 </html>
